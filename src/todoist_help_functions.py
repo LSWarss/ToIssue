@@ -1,8 +1,10 @@
-from secrets import *
-from todoist.api import TodoistAPI
 from pprint import pprint
+from secrets import *
 
-def find_project(name):
+from todoist.api import TodoistAPI
+
+
+def find_project_by_name(name):
     """ Help function to find specific projects ID by given name
 
     Args:
@@ -14,3 +16,13 @@ def find_project(name):
     for project in projects:
         if project['name'] == name:
             return(project['id'])
+
+def find_task_by_name(content):
+    api = TodoistAPI(TODOIST_API_TOKEN)
+    api.sync()
+    items = api.state['items']
+    for item in items:
+        if item['content'] == content:
+            return(item['id'])
+
+
