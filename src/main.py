@@ -12,6 +12,8 @@ gitApi = Github(GITHUB_API_TOKEN)
 api = TodoistAPI(TODOIST_API_TOKEN)
 api.sync()
 
+# TODO: Add if for the object added to the todolist, while right now it's all added no matter 
+# if is in the list or nah
 def getAllMyIssues(repo, username):
     """ This function adds all "open" issues that are assigned to given username
 
