@@ -10,5 +10,4 @@ from django.views.decorators.csrf import csrf_exempt
 def webhooks_endpoint(request):
     jsondata = request.body
     data = json.loads(jsondata)
-    pprint(jsondata)
-    return HttpResponse(status=200)
+    return HttpResponse(data,status=200)
