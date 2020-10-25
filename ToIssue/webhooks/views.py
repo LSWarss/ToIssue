@@ -10,11 +10,3 @@ def webhooks_endpoint(request):
     jsondata = request.body
     data = json.loads(jsondata)
     return HttpResponse(status=200)
-
-@csrf_exempt
-def payload_endpoint(request):
-    if request.method == 'POST':
-        incoming_msg = request.POST['Body'].lower()
-    print(incoming_msg)
-
-    return HttpResponse(status=200)
