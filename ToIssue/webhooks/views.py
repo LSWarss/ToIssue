@@ -10,8 +10,7 @@ def webhooks_endpoint(request):
     headers = request.headers
     jsondata = request.body
     data = json.loads(jsondata)
-    for props in data:
-        if props.sender:
-            print(props.sender.login)
+    print(type(data))
+
     
     return HttpResponse(status=200)
