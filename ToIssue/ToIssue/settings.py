@@ -26,7 +26,7 @@ SECRET_KEY = DJANGO_SECRET_TOKEN
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["a4cda7685b58.ngrok.io",]
+ALLOWED_HOSTS = ["427e18411979.ngrok.io",]
 
 # Application definition
 
