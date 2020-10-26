@@ -10,6 +10,6 @@ def webhooks_endpoint(request):
     headers = request.headers
     print(headers)
     jsondata = request.body
-    print(jsondata['assignee'])
     data = json.loads(jsondata)
+    print(data['assignee'])
     return HttpResponse(status=200)
