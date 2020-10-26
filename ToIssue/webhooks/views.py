@@ -10,7 +10,7 @@ def webhooks_endpoint(request):
     headers = request.headers
     body = request.body
     print(headers)
-    print(body)
+    print(json.dumps(body,indent=4, sort_keys=True))
     jsondata = request.body
     data = json.loads(jsondata)
     return HttpResponse(status=200)

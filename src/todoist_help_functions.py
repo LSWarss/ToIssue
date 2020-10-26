@@ -3,7 +3,6 @@ from secrets import *
 
 from todoist.api import TodoistAPI
 
-
 def find_project_by_name(name):
     """ Help function to find specific projects ID by given name
 
