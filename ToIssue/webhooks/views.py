@@ -11,5 +11,5 @@ def webhooks_endpoint(request):
     data = json.loads(jsondata)
     print(request.get_host())
     print(data['sender']['login'])
-    
+    print(data)
     return HttpResponse(status=200)
