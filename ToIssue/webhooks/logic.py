@@ -50,3 +50,5 @@ def getAllMyIssuesFromProject(repo, username):
 def addNewIssueToTodoist(repo, username, content):
     return "wroking"
     
+def checkingifIssue(data):
+    return None
