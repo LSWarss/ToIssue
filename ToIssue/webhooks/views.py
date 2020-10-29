@@ -11,6 +11,6 @@ def webhooks_endpoint(request):
     data = json.loads(jsondata)
     print(request.get_host())
     print(data['sender']['login'])
-    if(data['action'] == 'opened' and 'issue' in data):
+    if('issue' in data):
         print(data)
     return HttpResponse(status=200)
