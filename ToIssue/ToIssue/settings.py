@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from .secrets import *
+from .django_secrets import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +26,7 @@ SECRET_KEY = DJANGO_SECRET_TOKEN
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["b799a4002d3e.ngrok.io",]
+ALLOWED_HOSTS = ["f0c0e86be81e.ngrok.io","127.0.0.1"]
 
 # Application definition
 
